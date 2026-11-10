@@ -1,0 +1,78 @@
+/* Learna AI Quiz & Apple CarPlay In-Dash Styling */
+
+:root {
+  --primary-base: #1A47B8;
+  --primary-hover: #153791;
+  --primary-50: #F0F7FF;
+  --primary-100: #E1EFFF;
+  --primary-200: #C4DFFF;
+  --accent-orange: #FF8A00;
+  --carplay-bg: #0A0A0C;
+  --carplay-surface: #1C1C1E;
+  --carplay-border: #2C2C2E;
+  --carplay-blue: #0A84FF;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FAFAFC;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+/* CarPlay Mode Overrides */
+body.carplay-active {
+  background-color: #050507;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Transitions */
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Selection Effects */
+.opt-card:active,
+.statement-card:active,
+.multi-card:active,
+.carplay-opt-btn:active {
+  transform: scale(0.98);
+}
+
+/* CarPlay Infotainment Frame */
+.carplay-infotainment {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.carplay-dock button:active {
+  background-color: #2C2C2E;
+}
+

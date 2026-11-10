@@ -1,0 +1,1 @@
+import{_ as e,b as t,mt as n}from"./Ib1jYPSS.js";var r={xmlns:`http://www.w3.org/2000/svg`,width:`24`,height:`24`,fill:`none`};function i(i,a){return n(),t(`svg`,r,[...a[0]||=[e(`path`,{stroke:`currentColor`,"stroke-linecap":`round`,"stroke-width":`2`,d:`m7 10 4.846 5.816a.2.2 0 0 0 .308 0L17 10`},null,-1)]])}var a={render:i};export{a as t};

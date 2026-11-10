@@ -1,0 +1,1 @@
+function e(e){return String(e).charAt(0).toUpperCase()+String(e).slice(1)}function t(e){let t=Math.floor(e/60),n=e%60;return`${t.toString().padStart(2,`0`)}:${n.toString().padStart(2,`0`)}`}export{t as n,e as t};

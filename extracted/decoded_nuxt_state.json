@@ -1,0 +1,1777 @@
+{
+  "data": {},
+  "state": {
+    "$scerebro:id": null,
+    "$scerebro:isNewUser": false,
+    "$scerebro:config:data": null,
+    "$scerebro:config:loaded": false,
+    "$scerebro:userEventSent": false,
+    "$scerebro:events": [
+      "ShallowRef",
+      []
+    ],
+    "$scerebro:config:status": "idle",
+    "$scerebro:config:error": null,
+    "$si18n:cached-locale-configs": {
+      "es": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "tr": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "pt": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "es-419": {
+        "fallbacks": [
+          "es",
+          "en",
+          "en"
+        ],
+        "cacheable": true
+      },
+      "fr": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "en": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "de": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "it": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "uk": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ru": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ja": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ko": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ar": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "bn": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "th": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "vi": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "id": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ms": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "el": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "nl": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "da": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "no": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "fi": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "pl": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "bg": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "ro": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "sr": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "he": {
+        "fallbacks": [
+          "en"
+        ],
+        "cacheable": true
+      },
+      "pt-BR": {
+        "fallbacks": [
+          "pt",
+          "en",
+          "en"
+        ],
+        "cacheable": true
+      }
+    },
+    "$si18n:resolved-locale": "",
+    "$scerebro-backend-config": {
+      "web_keyword_landing": "{\"default\":false}",
+      "considered_experiments": [
+        "jbymPyPjKfYwzFHMz184"
+      ],
+      "_variant_name": "B - Hard Paywall",
+      "web_paywall_structure": "{\"default\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"onboarding\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"signup\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\"},\"home\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"app_launch\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"limit\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"jump_exercise\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"unlock_tutor\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz-native\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz-simple\":{\"page_layout\":\"centered\",\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"}}",
+      "isl_keys": "OqdluTNu+ELJSrUtzXHi5UuI79W4A9HS6j3ZUI2oXTKozCI66w6YuabjImcfKRAUUnvU+78E5K9V1pzcVHBKlpXD96z8navcPfLAgAAu3AB7vJnjGb3IXcSQ4ggyHl5wnb2UadfS6QZr6Ax2R+x8XnqGefWxIKO0UCIglM4LbdQ="
+    },
+    "$snuxt-seo-utils:routeRules": {
+      "head": -1,
+      "seoMeta": -1
+    },
+    "$sasset-preloader-loaded": {},
+    "$ssite-config": {
+      "_priority": {
+        "name": -10,
+        "env": -15,
+        "url": -2,
+        "defaultLocale": -2,
+        "currentLocale": -2
+      },
+      "currentLocale": "en",
+      "defaultLocale": "en",
+      "env": "production",
+      "name": "learna-ai",
+      "url": "https://ailearna.com"
+    }
+  },
+  "once": [
+    "Set"
+  ],
+  "_errors": {},
+  "serverRendered": true,
+  "path": "/onboarding-quiz-native",
+  "pinia": {
+    "_pc_query": {
+      "caches": [
+        "skipHydrate",
+        1
+      ]
+    },
+    "_pc_mutation": {
+      "caches": [
+        "skipHydrate",
+        1
+      ]
+    },
+    "user": {
+      "fetchStatus": "idle",
+      "initialized": "false",
+      "subscriptions": "null",
+      "user": "_",
+      "userData": "_"
+    },
+    "survey-onboarding": {
+      "rawFlow": {
+        "name": "quiz-native",
+        "steps": [
+          {
+            "name": "select_age",
+            "component": "OnboardingSelectListAge",
+            "lottie": "1.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_age.title_main",
+              "subtitle": "survey_onboarding.select_age.subtitle",
+              "quizInfo": "survey_onboarding.select_age.quiz_info",
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "localized": true,
+              "options": [
+                {
+                  "text": "survey_onboarding.select_age.18_24",
+                  "value": "18_24",
+                  "img": "/assets/images/survey-onboarding/age/age-18-24.png"
+                },
+                {
+                  "text": "survey_onboarding.select_age.25_34",
+                  "value": "25_34",
+                  "img": "/assets/images/survey-onboarding/age/age-25-34.png"
+                },
+                {
+                  "text": "survey_onboarding.select_age.35_44",
+                  "value": "35_44",
+                  "img": "/assets/images/survey-onboarding/age/age-35-44.png"
+                },
+                {
+                  "text": "survey_onboarding.select_age.45+",
+                  "value": "45+",
+                  "img": "/assets/images/survey-onboarding/age/age-45-plus.png"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "1.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_language",
+            "id": "language",
+            "component": "OnboardingDropdown",
+            "lottie": "2.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_language.title",
+              "placeholder": "survey_onboarding.select_language.placeholder",
+              "cols": 2,
+              "mobileCols": 1,
+              "localize": true,
+              "continueEnabled": true,
+              "options": [
+                {
+                  "text": "Español",
+                  "value": "es",
+                  "emoji": "🇪🇸"
+                },
+                {
+                  "text": "Türkçe",
+                  "value": "tr",
+                  "emoji": "🇹🇷"
+                },
+                {
+                  "text": "Português",
+                  "value": "pt",
+                  "emoji": "🇵🇹"
+                },
+                {
+                  "text": "Español",
+                  "value": "es-419",
+                  "emoji": "🇲🇽🇨🇴🇦🇷"
+                },
+                {
+                  "text": "Français",
+                  "value": "fr",
+                  "emoji": "🇫🇷"
+                },
+                {
+                  "text": "English",
+                  "value": "en",
+                  "emoji": "🇬🇧"
+                },
+                {
+                  "text": "हिन्दी",
+                  "value": "hi",
+                  "emoji": "🇮🇳"
+                },
+                {
+                  "text": "Deutsch",
+                  "value": "de",
+                  "emoji": "🇩🇪"
+                },
+                {
+                  "text": "Italiano",
+                  "value": "it",
+                  "emoji": "🇮🇹"
+                },
+                {
+                  "text": "Українська",
+                  "value": "uk",
+                  "emoji": "🇺🇦"
+                },
+                {
+                  "text": "Русский",
+                  "value": "ru",
+                  "emoji": "🇷🇺"
+                },
+                {
+                  "text": "日本語",
+                  "value": "ja",
+                  "emoji": "🇯🇵"
+                },
+                {
+                  "text": "한국어",
+                  "value": "ko",
+                  "emoji": "🇰🇷"
+                },
+                {
+                  "text": "العربية",
+                  "value": "ar",
+                  "emoji": "🇸🇦"
+                },
+                {
+                  "text": "বাংলা",
+                  "value": "bn",
+                  "emoji": "🇧🇩"
+                },
+                {
+                  "text": "اردو",
+                  "value": "ur",
+                  "emoji": "🇵🇰"
+                },
+                {
+                  "text": "فارسی",
+                  "value": "fa",
+                  "emoji": "🇮🇷"
+                },
+                {
+                  "text": "ไทย",
+                  "value": "th",
+                  "emoji": "🇹🇭"
+                },
+                {
+                  "text": "Tiếng Việt",
+                  "value": "vi",
+                  "emoji": "🇻🇳"
+                },
+                {
+                  "text": "Bahasa Indonesia",
+                  "value": "id",
+                  "emoji": "🇮🇩"
+                },
+                {
+                  "text": "Bahasa Melayu",
+                  "value": "ms",
+                  "emoji": "🇲🇾"
+                },
+                {
+                  "text": "Filipino",
+                  "value": "fil",
+                  "emoji": "🇵🇭"
+                },
+                {
+                  "text": "Kiswahili",
+                  "value": "sw",
+                  "emoji": "🇰🇪"
+                },
+                {
+                  "text": "Ελληνικά",
+                  "value": "el",
+                  "emoji": "🇬🇷"
+                },
+                {
+                  "text": "Nederlands",
+                  "value": "nl",
+                  "emoji": "🇳🇱"
+                },
+                {
+                  "text": "Dansk",
+                  "value": "da",
+                  "emoji": "🇩🇰"
+                },
+                {
+                  "text": "Svenska",
+                  "value": "sv",
+                  "emoji": "🇸🇪"
+                },
+                {
+                  "text": "Norsk",
+                  "value": "no",
+                  "emoji": "🇳🇴"
+                },
+                {
+                  "text": "Suomi",
+                  "value": "fi",
+                  "emoji": "🇫🇮"
+                },
+                {
+                  "text": "Íslenska",
+                  "value": "is",
+                  "emoji": "🇮🇸"
+                },
+                {
+                  "text": "Magyar",
+                  "value": "hu",
+                  "emoji": "🇭🇺"
+                },
+                {
+                  "text": "Polski",
+                  "value": "pl",
+                  "emoji": "🇵🇱"
+                },
+                {
+                  "text": "Čeština",
+                  "value": "cs",
+                  "emoji": "🇨🇿"
+                },
+                {
+                  "text": "Slovenčina",
+                  "value": "sk",
+                  "emoji": "🇸🇰"
+                },
+                {
+                  "text": "Slovenščina",
+                  "value": "sl",
+                  "emoji": "🇸🇮"
+                },
+                {
+                  "text": "Hrvatski",
+                  "value": "hr",
+                  "emoji": "🇭🇷"
+                },
+                {
+                  "text": "Български",
+                  "value": "bg",
+                  "emoji": "🇧🇬"
+                },
+                {
+                  "text": "Română",
+                  "value": "ro",
+                  "emoji": "🇷🇴"
+                },
+                {
+                  "text": "Српски",
+                  "value": "sr",
+                  "emoji": "🇷🇸"
+                },
+                {
+                  "text": "Македонски",
+                  "value": "mk",
+                  "emoji": "🇲🇰"
+                },
+                {
+                  "text": "Shqip",
+                  "value": "sq",
+                  "emoji": "🇦🇱"
+                },
+                {
+                  "text": "עברית",
+                  "value": "he",
+                  "emoji": "🇮🇱"
+                },
+                {
+                  "text": "தமிழ்",
+                  "value": "ta",
+                  "emoji": "🇮🇳"
+                },
+                {
+                  "text": "Afrikaans",
+                  "value": "af",
+                  "emoji": "🇿🇦"
+                },
+                {
+                  "text": "Հայերեն",
+                  "value": "hy",
+                  "emoji": "🇦🇲"
+                },
+                {
+                  "text": "Azərbaycan",
+                  "value": "az",
+                  "emoji": "🇦🇿"
+                },
+                {
+                  "text": "မြန်မာ",
+                  "value": "my",
+                  "emoji": "🇲🇲"
+                },
+                {
+                  "text": "ქართული",
+                  "value": "ka",
+                  "emoji": "🇬🇪"
+                },
+                {
+                  "text": "Қазақ",
+                  "value": "kk",
+                  "emoji": "🇰🇿"
+                },
+                {
+                  "text": "ខ្មែរ",
+                  "value": "km",
+                  "emoji": "🇰🇭"
+                },
+                {
+                  "text": "Кыргызча",
+                  "value": "ky",
+                  "emoji": "🇰🇬"
+                },
+                {
+                  "text": "ລາວ",
+                  "value": "lo",
+                  "emoji": "🇱🇦"
+                },
+                {
+                  "text": "Latviešu",
+                  "value": "lv",
+                  "emoji": "🇱🇻"
+                },
+                {
+                  "text": "Lietuvių",
+                  "value": "lt",
+                  "emoji": "🇱🇹"
+                },
+                {
+                  "text": "Malti",
+                  "value": "mt",
+                  "emoji": "🇲🇹"
+                },
+                {
+                  "text": "Монгол",
+                  "value": "mn",
+                  "emoji": "🇲🇳"
+                },
+                {
+                  "text": "नेपाली",
+                  "value": "ne",
+                  "emoji": "🇳🇵"
+                },
+                {
+                  "text": "پښتو",
+                  "value": "ps",
+                  "emoji": "🇦🇫"
+                },
+                {
+                  "text": "Тоҷикӣ",
+                  "value": "tg",
+                  "emoji": "🇹🇯"
+                },
+                {
+                  "text": "Türkmençe",
+                  "value": "tk",
+                  "emoji": "🇹🇲"
+                },
+                {
+                  "text": "Oʻzbek",
+                  "value": "uz",
+                  "emoji": "🇺🇿"
+                },
+                {
+                  "text": "isiZulu",
+                  "value": "zu",
+                  "emoji": "🇿🇦"
+                },
+                {
+                  "text": "Soomaali",
+                  "value": "so",
+                  "emoji": "🇸🇴"
+                },
+                {
+                  "text": "Português (Brasil)",
+                  "value": "pt-BR",
+                  "emoji": "🇧🇷"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "2.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "social_proof_community",
+            "component": "OnboardingSocialProofColored",
+            "leftImg": {
+              "id": "left-community",
+              "name": "million-people",
+              "path": "/survey-onboarding/left-imgs",
+              "type": "png",
+              "responsive": false,
+              "versions": [],
+              "isNuxtImg": true
+            },
+            "props": {
+              "title": {
+                "title": "survey_onboarding.social_proof_community.title",
+                "style": {
+                  "order": 1,
+                  "color": "#3BA0FF"
+                },
+                "localizationParams": {
+                  "targetLanguage": "languages.en"
+                }
+              },
+              "asset": {
+                "style": {
+                  "order": 3
+                },
+                "asset": {
+                  "id": "left-community",
+                  "name": "million-people",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              },
+              "bgColor": "#EBF5FF"
+            },
+            "assets": {
+              "images": [
+                {
+                  "id": "left-community",
+                  "name": "million-people",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "select_proficiency",
+            "id": "languageLevels",
+            "multiTarget": true,
+            "component": "OnboardingSelectListOne",
+            "lottie": "3.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_proficiency.title",
+              "cols": 2,
+              "mobileCols": 2,
+              "localize": true,
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/beginner.png",
+                  "text": "survey_onboarding.select_proficiency.beginner",
+                  "value": "beginner"
+                },
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/pre-intermediate.png",
+                  "text": "survey_onboarding.select_proficiency.pre_intermediate",
+                  "value": "pre_intermediate"
+                },
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/intermediate.png",
+                  "text": "survey_onboarding.select_proficiency.intermediate",
+                  "value": "intermediate"
+                },
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/upper-intermediate.png",
+                  "text": "survey_onboarding.select_proficiency.upper_intermediate",
+                  "value": "upper_intermediate"
+                },
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/advanced.png",
+                  "text": "survey_onboarding.select_proficiency.advanced",
+                  "value": "advanced"
+                },
+                {
+                  "img": "/assets/images/survey-onboarding/proficiency/proficient.png",
+                  "text": "survey_onboarding.select_proficiency.proficient",
+                  "value": "proficient"
+                }
+              ]
+            },
+            "assets": {
+              "images": [
+                {
+                  "id": "proficiency-beginner",
+                  "name": "beginner",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                },
+                {
+                  "id": "proficiency-pre-intermediate",
+                  "name": "pre-intermediate",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                },
+                {
+                  "id": "proficiency-intermediate",
+                  "name": "intermediate",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                },
+                {
+                  "id": "proficiency-upper-intermediate",
+                  "name": "upper-intermediate",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                },
+                {
+                  "id": "proficiency-advanced",
+                  "name": "advanced",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                },
+                {
+                  "id": "proficiency-proficient",
+                  "name": "proficient",
+                  "path": "/survey-onboarding/proficiency",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": false
+                }
+              ],
+              "lotties": [
+                "3.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_motivation",
+            "id": "purposesMultiTarget",
+            "multiTarget": true,
+            "component": "OnboardingSelectListMulti",
+            "lottie": "4.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_motivation.title",
+              "cols": 1,
+              "mobileCols": 1,
+              "buttonStyle": "left_aligned_text",
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "text": "survey.options.areas.social",
+                  "value": "social"
+                },
+                {
+                  "text": "survey.options.areas.work",
+                  "value": "work"
+                },
+                {
+                  "text": "survey.options.areas.study",
+                  "value": "study"
+                },
+                {
+                  "text": "survey.options.areas.travel",
+                  "value": "travel"
+                },
+                {
+                  "text": "survey.options.areas.education",
+                  "value": "education"
+                },
+                {
+                  "text": "survey.options.areas.communicating",
+                  "value": "communicating"
+                },
+                {
+                  "text": "survey.options.areas.brain_training",
+                  "value": "brain_training"
+                },
+                {
+                  "text": "survey.options.areas.other",
+                  "value": "other"
+                }
+              ],
+              "forceSelection": true
+            },
+            "assets": {
+              "lotties": [
+                "4.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "social_proof_phone",
+            "component": "OnboardingSocialProofColored",
+            "leftImg": {
+              "id": "left-phone-x",
+              "name": "on-the-phone-x",
+              "path": "/survey-onboarding/left-imgs",
+              "type": "png",
+              "responsive": false,
+              "versions": [],
+              "isNuxtImg": true
+            },
+            "props": {
+              "title": {
+                "title": "survey_onboarding.social_proof_phone.title",
+                "localizationParams": {
+                  "targetLanguage": "languages.en"
+                }
+              },
+              "localize": true,
+              "asset": {
+                "asset": {
+                  "id": "left-phone-x",
+                  "name": "on-the-phone-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              },
+              "bgColor": "#EBF5FF"
+            },
+            "assets": {
+              "images": [
+                {
+                  "id": "left-phone-x",
+                  "name": "on-the-phone-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "select_goal",
+            "component": "OnboardingSelectListOne",
+            "lottie": "5.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_goal.title",
+              "cols": 1,
+              "mobileCols": 1,
+              "buttonStyle": "left_aligned_text",
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "text": "survey_onboarding.select_goal.speak",
+                  "value": "speak"
+                },
+                {
+                  "text": "survey_onboarding.select_goal.watch",
+                  "value": "watch"
+                },
+                {
+                  "text": "survey_onboarding.select_goal.understand",
+                  "value": "understand"
+                },
+                {
+                  "text": "survey_onboarding.select_goal.read",
+                  "value": "read"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "5.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "social_proof_personalized_intro",
+            "component": "OnboardingSocialProofColored",
+            "leftImg": {
+              "id": "left-personalized-x",
+              "name": "personalized-x",
+              "path": "/survey-onboarding/left-imgs",
+              "type": "png",
+              "responsive": false,
+              "versions": [],
+              "isNuxtImg": true
+            },
+            "props": {
+              "title": {
+                "title": "survey_onboarding.social_proof_personalized_intro.title",
+                "style": {
+                  "order": 2
+                }
+              },
+              "text": {
+                "text": "survey_onboarding.social_proof_personalized_intro.text",
+                "style": {
+                  "order": 3
+                }
+              },
+              "asset": {
+                "style": {
+                  "order": 1
+                },
+                "asset": {
+                  "id": "left-personalized-x",
+                  "name": "personalized-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              },
+              "bgColor": "#EBF5FF"
+            },
+            "assets": {
+              "images": [
+                {
+                  "id": "left-personalized-x",
+                  "name": "personalized-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "statement_not_understand_fluent",
+            "component": "OnboardingSelectListOne",
+            "lottie": "6.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_not_understand_fluent.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "localize": true,
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "6.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_few_words",
+            "component": "OnboardingSelectListOne",
+            "lottie": "7.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_few_words.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "7.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_incorrect_sentences",
+            "component": "OnboardingSelectListOne",
+            "lottie": "8.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_incorrect_sentences.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "8.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_understand_cant_speak",
+            "component": "OnboardingSelectListOne",
+            "lottie": "9.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_understand_cant_speak.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "9.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_improve_fluency",
+            "component": "OnboardingSelectListOne",
+            "lottie": "10.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_improve_fluency.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "localize": true,
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "10.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_no_practice_partner",
+            "component": "OnboardingSelectListOne",
+            "lottie": "11.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_no_practice_partner.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "11.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "statement_struggle_movies",
+            "component": "OnboardingSelectListOne",
+            "lottie": "12.onb.json",
+            "props": {
+              "title": "survey_onboarding.statement_struggle_movies.title",
+              "subtitle": "survey_onboarding.statement_question",
+              "localize": true,
+              "localizationParams": {
+                "targetLanguage": "languages.en"
+              },
+              "options": [
+                {
+                  "text": "survey_onboarding.true",
+                  "value": "true"
+                },
+                {
+                  "text": "survey_onboarding.partially_true",
+                  "value": "partially_true"
+                },
+                {
+                  "text": "survey_onboarding.false",
+                  "value": "false"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "12.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_improvement_area",
+            "component": "OnboardingSelectListOne",
+            "lottie": "13.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_improvement_area.title",
+              "buttonStyle": "left_aligned_text",
+              "options": [
+                {
+                  "text": "survey_onboarding.select_improvement_area.speaking",
+                  "value": "speaking"
+                },
+                {
+                  "text": "survey_onboarding.select_improvement_area.listening",
+                  "value": "listening"
+                },
+                {
+                  "text": "survey_onboarding.select_improvement_area.vocabulary",
+                  "value": "vocabulary"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "13.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "social_proof_personalized_final",
+            "component": "OnboardingSocialProofColored",
+            "leftImg": {
+              "id": "left-personalized-final-x",
+              "name": "personalized-final-x",
+              "path": "/survey-onboarding/left-imgs",
+              "type": "png",
+              "responsive": false,
+              "versions": [],
+              "isNuxtImg": true
+            },
+            "props": {
+              "title": {
+                "style": {
+                  "order": 2
+                },
+                "title": "survey_onboarding.social_proof_personalized_final.title"
+              },
+              "text": {
+                "style": {
+                  "order": 3
+                },
+                "text": "survey_onboarding.social_proof_personalized_final.text"
+              },
+              "asset": {
+                "style": {
+                  "order": 1
+                },
+                "asset": {
+                  "id": "left-personalized-final-x",
+                  "name": "personalized-final-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              },
+              "bgColor": "#EBF5FF"
+            },
+            "assets": {
+              "images": [
+                {
+                  "id": "left-personalized-final-x",
+                  "name": "personalized-final-x",
+                  "path": "/survey-onboarding/left-imgs",
+                  "type": "png",
+                  "responsive": false,
+                  "versions": [],
+                  "isNuxtImg": true
+                }
+              ]
+            }
+          },
+          {
+            "name": "select_words_beginner",
+            "component": "OnboardingSelectListMulti",
+            "lottie": "14.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_words.title",
+              "subtitle": "survey_onboarding.select_words.subtitle.beginner",
+              "localizeOptions": false,
+              "buttonType": "checkbox",
+              "options": [
+                {
+                  "value": "laugh"
+                },
+                {
+                  "value": "run"
+                },
+                {
+                  "value": "drink"
+                },
+                {
+                  "value": "sky"
+                },
+                {
+                  "value": "flower"
+                },
+                {
+                  "value": "eat"
+                },
+                {
+                  "value": "listen"
+                },
+                {
+                  "value": "book"
+                },
+                {
+                  "value": "chair"
+                },
+                {
+                  "value": "happy"
+                },
+                {
+                  "value": "walk"
+                },
+                {
+                  "value": "sleep"
+                },
+                {
+                  "value": "friend"
+                },
+                {
+                  "value": "family"
+                },
+                {
+                  "value": "car"
+                },
+                {
+                  "value": "play"
+                },
+                {
+                  "value": "dog"
+                },
+                {
+                  "value": "dance"
+                },
+                {
+                  "value": "water"
+                },
+                {
+                  "value": "red"
+                },
+                {
+                  "value": "morning"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "14.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_words_intermediate",
+            "component": "OnboardingSelectListMulti",
+            "lottie": "15.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_words.title",
+              "subtitle": "survey_onboarding.select_words.subtitle.intermediate",
+              "localizeOptions": false,
+              "buttonType": "checkbox",
+              "options": [
+                {
+                  "value": "challenge"
+                },
+                {
+                  "value": "disappointment"
+                },
+                {
+                  "value": "concentrate"
+                },
+                {
+                  "value": "recommendation"
+                },
+                {
+                  "value": "responsibility"
+                },
+                {
+                  "value": "ambition"
+                },
+                {
+                  "value": "creativity"
+                },
+                {
+                  "value": "abandon"
+                },
+                {
+                  "value": "beyond"
+                },
+                {
+                  "value": "decrease"
+                },
+                {
+                  "value": "emerge"
+                },
+                {
+                  "value": "honesty"
+                },
+                {
+                  "value": "maintain"
+                },
+                {
+                  "value": "perception"
+                },
+                {
+                  "value": "similarity"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "15.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_words_advanced",
+            "component": "OnboardingSelectListMulti",
+            "lottie": "16.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_words.title",
+              "subtitle": "survey_onboarding.select_words.subtitle.advanced",
+              "localizeOptions": false,
+              "buttonType": "checkbox",
+              "options": [
+                {
+                  "value": "ambiguity"
+                },
+                {
+                  "value": "intricate"
+                },
+                {
+                  "value": "articulate"
+                },
+                {
+                  "value": "ingenuity"
+                },
+                {
+                  "value": "resilience"
+                },
+                {
+                  "value": "absence"
+                },
+                {
+                  "value": "introspection"
+                },
+                {
+                  "value": "meticulous"
+                },
+                {
+                  "value": "credibility"
+                },
+                {
+                  "value": "architectural"
+                },
+                {
+                  "value": "cultivate"
+                },
+                {
+                  "value": "default"
+                },
+                {
+                  "value": "noble"
+                },
+                {
+                  "value": "residential"
+                },
+                {
+                  "value": "sketch"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "16.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "select_interests",
+            "id": "interestsMultiTarget",
+            "multiTarget": true,
+            "component": "OnboardingSelectListMulti",
+            "lottie": "17.onb.json",
+            "props": {
+              "title": "survey_onboarding.select_interests.title",
+              "subtitle": "survey_onboarding.select_interests.subtitle",
+              "forceSelection": true,
+              "options": [
+                {
+                  "emoji": "🔬",
+                  "text": "survey_onboarding.select_interests.science",
+                  "value": "science"
+                },
+                {
+                  "emoji": "📖",
+                  "text": "survey_onboarding.select_interests.literature",
+                  "value": "literature"
+                },
+                {
+                  "emoji": "🌍",
+                  "text": "survey_onboarding.select_interests.languages",
+                  "value": "languages"
+                },
+                {
+                  "emoji": "🏛",
+                  "text": "survey_onboarding.select_interests.politics",
+                  "value": "politics"
+                },
+                {
+                  "emoji": "🧠",
+                  "text": "survey_onboarding.select_interests.psychology",
+                  "value": "psychology"
+                },
+                {
+                  "emoji": "💭",
+                  "text": "survey_onboarding.select_interests.philosophy",
+                  "value": "philosophy"
+                },
+                {
+                  "emoji": "🌐",
+                  "text": "survey_onboarding.select_interests.sociology",
+                  "value": "sociology"
+                },
+                {
+                  "emoji": "🚀",
+                  "text": "survey_onboarding.select_interests.entrepreneurship",
+                  "value": "entrepreneurship"
+                },
+                {
+                  "emoji": "📰",
+                  "text": "survey_onboarding.select_interests.news",
+                  "value": "news"
+                },
+                {
+                  "emoji": "💰",
+                  "text": "survey_onboarding.select_interests.finance",
+                  "value": "finance"
+                },
+                {
+                  "emoji": "🌠",
+                  "text": "survey_onboarding.select_interests.astronomy",
+                  "value": "astronomy"
+                },
+                {
+                  "emoji": "➗",
+                  "text": "survey_onboarding.select_interests.mathematics",
+                  "value": "mathematics"
+                },
+                {
+                  "emoji": "🏗️",
+                  "text": "survey_onboarding.select_interests.architecture",
+                  "value": "architecture"
+                },
+                {
+                  "emoji": "🎥",
+                  "text": "survey_onboarding.select_interests.animation",
+                  "value": "animation"
+                },
+                {
+                  "emoji": "📈",
+                  "text": "survey_onboarding.select_interests.marketing",
+                  "value": "marketing"
+                },
+                {
+                  "emoji": "🖋️",
+                  "text": "survey_onboarding.select_interests.journalism",
+                  "value": "journalism"
+                },
+                {
+                  "emoji": "💻",
+                  "text": "survey_onboarding.select_interests.software",
+                  "value": "software"
+                },
+                {
+                  "emoji": "🎤",
+                  "text": "survey_onboarding.select_interests.pop_culture",
+                  "value": "pop_culture"
+                },
+                {
+                  "emoji": "🍳",
+                  "text": "survey_onboarding.select_interests.cooking",
+                  "value": "cooking"
+                },
+                {
+                  "emoji": "🥑",
+                  "text": "survey_onboarding.select_interests.food",
+                  "value": "food"
+                },
+                {
+                  "emoji": "🧳",
+                  "text": "survey_onboarding.select_interests.travel",
+                  "value": "travel"
+                },
+                {
+                  "emoji": "🐾",
+                  "text": "survey_onboarding.select_interests.pets",
+                  "value": "pets"
+                },
+                {
+                  "emoji": "🛍️",
+                  "text": "survey_onboarding.select_interests.shopping",
+                  "value": "shopping"
+                },
+                {
+                  "emoji": "🍿",
+                  "text": "survey_onboarding.select_interests.movies",
+                  "value": "movies"
+                },
+                {
+                  "emoji": "🤖",
+                  "text": "survey_onboarding.select_interests.technology",
+                  "value": "technology"
+                },
+                {
+                  "emoji": "⚽",
+                  "text": "survey_onboarding.select_interests.sports",
+                  "value": "sports"
+                },
+                {
+                  "emoji": "🎻",
+                  "text": "survey_onboarding.select_interests.music",
+                  "value": "music"
+                },
+                {
+                  "emoji": "🥗",
+                  "text": "survey_onboarding.select_interests.health_fitness",
+                  "value": "health_fitness"
+                },
+                {
+                  "emoji": "💅",
+                  "text": "survey_onboarding.select_interests.fashion",
+                  "value": "fashion"
+                },
+                {
+                  "emoji": "🏺",
+                  "text": "survey_onboarding.select_interests.culture",
+                  "value": "culture"
+                },
+                {
+                  "emoji": "💼",
+                  "text": "survey_onboarding.select_interests.jobs",
+                  "value": "jobs"
+                },
+                {
+                  "emoji": "♻️",
+                  "text": "survey_onboarding.select_interests.environment",
+                  "value": "environment"
+                },
+                {
+                  "emoji": "🏰",
+                  "text": "survey_onboarding.select_interests.history",
+                  "value": "history"
+                },
+                {
+                  "emoji": "📱",
+                  "text": "survey_onboarding.select_interests.social_media",
+                  "value": "social_media"
+                },
+                {
+                  "emoji": "🎨",
+                  "text": "survey_onboarding.select_interests.art_creativity",
+                  "value": "art_creativity"
+                }
+              ]
+            },
+            "assets": {
+              "lotties": [
+                "17.onb.json"
+              ]
+            }
+          },
+          {
+            "name": "personalized",
+            "component": "OnboardingPersonalized",
+            "hideProgress": true,
+            "props": {
+              "asset": {
+                "asset": "/assets/images/personalize/ai-tutor-head-x.png"
+              },
+              "title": "survey_onboarding.personalized.title",
+              "items": [
+                {
+                  "title": "survey_onboarding.personalized.items.0.title",
+                  "emoji": "✨"
+                },
+                {
+                  "title": "survey_onboarding.personalized.items.1.title",
+                  "emoji": "💬"
+                },
+                {
+                  "title": "survey_onboarding.personalized.items.2.title",
+                  "emoji": "👩🏻‍🏫"
+                },
+                {
+                  "title": "survey_onboarding.personalized.items.3.title",
+                  "emoji": "🏁"
+                }
+              ],
+              "loading": "survey_onboarding.personalized.loading",
+              "done": "survey_onboarding.personalized.done",
+              "hasModal": true,
+              "questions": [
+                {
+                  "title": "survey_onboarding.personalized.questions.0.title",
+                  "format": "select-one",
+                  "options": [
+                    {
+                      "text": "survey_onboarding.personalized.questions.0.options.0",
+                      "value": "minute5"
+                    },
+                    {
+                      "text": "survey_onboarding.personalized.questions.0.options.1",
+                      "value": "minute10"
+                    },
+                    {
+                      "text": "survey_onboarding.personalized.questions.0.options.2",
+                      "value": "minute15"
+                    }
+                  ],
+                  "stopAt": 35
+                },
+                {
+                  "title": "survey_onboarding.personalized.questions.1.title",
+                  "placeholder": "survey_onboarding.personalized.questions.1.placeholder",
+                  "format": "time-picker",
+                  "stopAt": 70
+                }
+              ]
+            },
+            "assets": {
+              "images": [
+                "/assets/images/survey-onboarding/personalized/user1.png",
+                "/assets/images/personalize/ai-tutor-head-x.png"
+              ]
+            }
+          }
+        ],
+        "targetLanguage": "en",
+        "native": true,
+        "meta": {
+          "title": "meta.quiz_native_title",
+          "description": "meta.quiz_native_description"
+        }
+      },
+      "surveyOnboardingAnswers": "null"
+    },
+    "config": {
+      "cerebroConfig": "null",
+      "paywallStructureConfig": "null",
+      "cerebroBackendConfig": {
+        "web_keyword_landing": "{\"default\":false}",
+        "considered_experiments": [
+          "jbymPyPjKfYwzFHMz184"
+        ],
+        "_variant_name": "B - Hard Paywall",
+        "web_paywall_structure": "{\"default\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"onboarding\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"signup\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\"},\"home\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"app_launch\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"limit\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"jump_exercise\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"unlock_tutor\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz-native\":{\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"},\"quiz-simple\":{\"page_layout\":\"centered\",\"layout\":\"vertical\",\"selected_index\":0,\"most_popular\":0,\"free_product_text\":\"Try for Free\",\"default_discount_rate\":0.6,\"products\":[\"pro.1week60upper\",\"pro.1month60upper\",\"pro.1year60upper\"],\"discounts\":[\"discountOneTime60\",\"discountOneTime60\",\"discountOneTime60\"],\"animated_button\":true,\"per_day_notation\":\"none\",\"save_tag\":true,\"discount_type\":\"default\",\"special_discount_enabled\":true,\"special_discount_type\":\"countdown\",\"special_discount\":\"discountOneTime71\",\"special_discount_rate\":0.71,\"countdown_discount_duration\":600,\"mobile_advantages\":\"animated\",\"skip_opacity\":0,\"side_panel\":\"plan_summary\"}}",
+        "isl_keys": "OqdluTNu+ELJSrUtzXHi5UuI79W4A9HS6j3ZUI2oXTKozCI66w6YuabjImcfKRAUUnvU+78E5K9V1pzcVHBKlpXD96z8navcPfLAgAAu3AB7vJnjGb3IXcSQ4ggyHl5wnb2UadfS6QZr6Ax2R+x8XnqGefWxIKO0UCIglM4LbdQ="
+      },
+      "isPaywallReady": "false"
+    }
+  },
+  "pinia_colada": {}
+}

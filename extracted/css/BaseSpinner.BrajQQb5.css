@@ -1,0 +1,1 @@
+@keyframes spin-reverse{0%{transform:rotate(0)}to{transform:rotate(-1turn)}}@layer utilities{.animate-spin-slow{animation:1s linear infinite spin}.animate-spin-reverse{animation:.5s linear infinite spin-reverse}}

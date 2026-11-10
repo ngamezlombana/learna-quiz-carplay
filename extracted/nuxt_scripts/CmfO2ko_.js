@@ -1,0 +1,1 @@
+var e=`https://ailearna.com`;export{e as t};

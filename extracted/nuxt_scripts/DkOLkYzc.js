@@ -1,0 +1,1 @@
+import{t as e}from"./CmfO2ko_.js";var t={default:e+`/assets/images/common/thumbnail.png`,faq:e+`/assets/images/common/thumbnail.png`},n=1200,r=630,i=`image/png`,a=(e,t)=>({ogImage:e,ogImageWidth:n,ogImageHeight:r,ogImageType:i,ogImageAlt:t,twitterImage:e,twitterImageAlt:t});export{a as n,t};

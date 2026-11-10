@@ -1,0 +1,1 @@
+import{b as e,mt as t,xt as n}from"./Ib1jYPSS.js";import{t as r}from"./BDNMzG2s2.js";var i={},a={class:`flex h-dvh md:h-auto`};function o(r,i){return t(),e(`div`,a,[n(r.$slots,`default`)])}var s=r(i,[[`render`,o]]);export{s as default};

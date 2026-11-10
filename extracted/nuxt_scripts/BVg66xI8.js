@@ -1,0 +1,1 @@
+var e=`1.7.7`,t=`learnaweb@codeway.co`,n={USERS:`users`,CALLS:`calls`},r=`wss://stt-stream-prod-972759413113.us-central1.run.app/v2`,i=`https://call-service-v2-prod-972759413113.us-central1.run.app`,a=`6983fa1952b30924cef9f0c1`,o=`53ch7c1d9be8a02f64d31e79`;export{t as a,r as i,i as n,a as o,n as r,o as s,e as t};
