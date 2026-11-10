@@ -52,25 +52,25 @@ export const quizData = {
         {
           id: "18_24",
           label: { en: "Age: 18-24", es: "Edad: 18-24" },
-          img: "/assets/images/survey-onboarding/age/age-18-24.png",
+          img: "./assets/images/survey-onboarding/age/age-18-24.png",
           spokenValue: "18 to 24"
         },
         {
           id: "25_34",
           label: { en: "Age: 25-34", es: "Edad: 25-34" },
-          img: "/assets/images/survey-onboarding/age/age-25-34.png",
+          img: "./assets/images/survey-onboarding/age/age-25-34.png",
           spokenValue: "25 to 34"
         },
         {
           id: "35_44",
           label: { en: "Age: 35-44", es: "Edad: 35-44" },
-          img: "/assets/images/survey-onboarding/age/age-35-44.png",
+          img: "./assets/images/survey-onboarding/age/age-35-44.png",
           spokenValue: "35 to 44"
         },
         {
           id: "45_plus",
           label: { en: "Age: 45+", es: "Edad: 45+" },
-          img: "/assets/images/survey-onboarding/age/age-45-plus.png",
+          img: "./assets/images/survey-onboarding/age/age-45-plus.png",
           spokenValue: "45 and older"
         }
       ]
@@ -108,7 +108,7 @@ export const quizData = {
         en: "People in 160+ countries use Learna to practice speaking freely and overcome language barriers.",
         es: "Personas en más de 160 países usan Learna para practicar conversación sin miedos ni juicios."
       },
-      lottie: "/assets/lotties/learna_users.json",
+      lottie: "./assets/lotties/learna_users.json",
       stats: [
         { number: "500K+", label: { en: "Active Learners", es: "Estudiantes activos" } },
         { number: "4.8★", label: { en: "App Store Rating", es: "Calificación App Store" } },
@@ -143,7 +143,7 @@ export const quizData = {
           level: "A1",
           label: { en: "Beginner", es: "Principiante" },
           description: { en: "I know basic greetings and simple isolated words", es: "Conozco saludos básicos y palabras sueltas" },
-          img: "/assets/images/survey-onboarding/proficiency/beginner.png",
+          img: "./assets/images/survey-onboarding/proficiency/beginner.png",
           spokenValue: "Beginner"
         },
         {
@@ -151,7 +151,7 @@ export const quizData = {
           level: "A2",
           label: { en: "Pre-Intermediate", es: "Pre-Intermedio" },
           description: { en: "I can communicate in simple daily situations", es: "Puedo comunicarme en situaciones cotidianas simples" },
-          img: "/assets/images/survey-onboarding/proficiency/pre-intermediate.png",
+          img: "./assets/images/survey-onboarding/proficiency/pre-intermediate.png",
           spokenValue: "Pre-Intermediate"
         },
         {
@@ -159,7 +159,7 @@ export const quizData = {
           level: "B1",
           label: { en: "Intermediate", es: "Intermedio" },
           description: { en: "I can have basic conversations on familiar topics", es: "Puedo mantener conversaciones sobre temas conocidos" },
-          img: "/assets/images/survey-onboarding/proficiency/intermediate.png",
+          img: "./assets/images/survey-onboarding/proficiency/intermediate.png",
           spokenValue: "Intermediate"
         },
         {
@@ -167,7 +167,7 @@ export const quizData = {
           level: "B2",
           label: { en: "Upper-Intermediate", es: "Intermedio Alto" },
           description: { en: "I express ideas fluently with minor hesitations", es: "Expreso ideas con fluidez con pequeños tropiezos" },
-          img: "/assets/images/survey-onboarding/proficiency/upper-intermediate.png",
+          img: "./assets/images/survey-onboarding/proficiency/upper-intermediate.png",
           spokenValue: "Upper Intermediate"
         },
         {
@@ -175,7 +175,7 @@ export const quizData = {
           level: "C1",
           label: { en: "Advanced", es: "Avanzado" },
           description: { en: "I communicate effortlessly in professional & social contexts", es: "Me comunico cómodamente en entornos profesionales y sociales" },
-          img: "/assets/images/survey-onboarding/proficiency/advanced.png",
+          img: "./assets/images/survey-onboarding/proficiency/advanced.png",
           spokenValue: "Advanced"
         },
         {
@@ -183,7 +183,7 @@ export const quizData = {
           level: "C2",
           label: { en: "Proficient", es: "Competente / Fluido" },
           description: { en: "Near-native precision, nuances, and natural mastery", es: "Dominio cercano al nativo con total soltura" },
-          img: "/assets/images/survey-onboarding/proficiency/proficient.png",
+          img: "./assets/images/survey-onboarding/proficiency/proficient.png",
           spokenValue: "Proficient"
         }
       ]
@@ -231,7 +231,7 @@ export const quizData = {
         en: "Learna's AI tutor listens patiently, corrects grammar in real time, and helps you speak naturally.",
         es: "El tutor de IA de Learna te escucha con paciencia, corrige tu pronunciación y te ayuda a soltarte."
       },
-      lottie: "/assets/lotties/learna_apps.json",
+      lottie: "./assets/lotties/learna_apps.json",
       voicePrompt: {
         en: "With Learna you can practice speaking anywhere, even in your car. Tap Continue.",
         es: "Con Learna puedes practicar en cualquier lugar, incluso conduciendo. Continuemos."
@@ -555,12 +555,12 @@ export const quizData = {
         en: "Tailored specially for you to reach confident fluency in 30 days.",
         es: "Diseñado especialmente para ti para alcanzar fluidez en 30 días."
       },
-      lottieGraph: "/assets/lotties/1.onb.json",
-      tutorAvatar: "/assets/images/personalize/ai-tutor-head-x.png",
+      lottieGraph: "./assets/lotties/1.onb.json",
+      tutorAvatar: "./assets/images/personalize/ai-tutor-head-x.png",
       quote: {
         author: "Maria Angelica Reyes, 35",
         country: "Philippines",
-        avatar: "/assets/images/survey-onboarding/personalized/user1.png",
+        avatar: "./assets/images/survey-onboarding/personalized/user1.png",
         text: {
           en: "Learna helped me overcome my fear of speaking in English. Practicing 10 minutes a day on my commute made all the difference!",
           es: "Learna me ayudó a superar el miedo a hablar en inglés. ¡Practicar 10 minutos al día en el auto marcó toda la diferencia!"

@@ -20,7 +20,7 @@ export class CarPlayController {
         artist: "Learna AI English Tutor",
         album: "Apple CarPlay Audio Learning",
         artwork: [
-          { src: "/assets/images/personalize/ai-tutor-head-x.png", sizes: "192x192", type: "image/png" }
+          { src: "./assets/images/personalize/ai-tutor-head-x.png", sizes: "192x192", type: "image/png" }
         ]
       });
 
@@ -61,7 +61,7 @@ export class CarPlayController {
         artist: "Learna AI English Tutor",
         album: "Apple CarPlay Hands-Free Quiz",
         artwork: [
-          { src: "/assets/images/personalize/ai-tutor-head-x.png", sizes: "192x192", type: "image/png" }
+          { src: "./assets/images/personalize/ai-tutor-head-x.png", sizes: "192x192", type: "image/png" }
         ]
       });
     } catch (e) {}
