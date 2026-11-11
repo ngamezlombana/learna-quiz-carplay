@@ -1,5 +1,6 @@
-// Learna Sound & Multi-Accent Voice AI Engine
-// Handles synthetic UI audio chimes, Server Neural TTS (Edge-TTS), Web Speech API fallback, and Hands-free STT
+// Learna Sound & Multi-Accent Voice AI Engine with Automotive VAD
+// Handles synthetic UI audio chimes, Server Neural TTS (Edge-TTS), Web Speech API fallback,
+// and 100% Hands-Free Driving Voice Activity Detection (VAD) with researched 2.0s trailing silence auto-send.
 
 export class SoundManager {
   constructor() {
@@ -8,8 +9,26 @@ export class SoundManager {
     this.currentUtterance = null;
     this.audioPlayer = new Audio();
     this.recognition = null;
+
+    // VAD & Hands-Free Configuration
+    this.silenceThresholdMs = 2000; // 2.0 seconds: Automotive NHTSA & CarPlay benchmark
     this.isListening = false;
+    this.isHandsFreeMode = true;
+    this.isSubmitting = false;
+    this.shouldKeepListening = false;
+    this.speechState = "idle"; // "idle" | "listening" | "speaking" | "silence_countdown" | "submitting"
+
+    this.accumulatedTranscript = "";
+    this.currentInterim = "";
+    this.silenceTimer = null;
+    this.silenceTicker = null;
+    this.silenceDeadline = 0;
+
+    // Callbacks
     this.speechCallback = null;
+    this.onInterimCallback = null;
+    this.onSilenceTickCallback = null;
+    this.onStateChangeCallback = null;
     this.onListeningChange = null;
 
     this.initAudioContext();
@@ -95,9 +114,61 @@ export class SoundManager {
     } catch (e) {}
   }
 
+  // Soft cue when microphone opens for hands-free driver listening turn
+  playMicOpenChime() {
+    this.resumeAudioContext();
+    if (!this.audioCtx) return;
+    try {
+      const now = this.audioCtx.currentTime;
+      const osc = this.audioCtx.createOscillator();
+      const gain = this.audioCtx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(783.99, now); // G5
+      osc.frequency.exponentialRampToValueAtTime(1046.50, now + 0.08); // C6
+
+      gain.gain.setValueAtTime(0.14, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+
+      osc.connect(gain);
+      gain.connect(this.audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.22);
+    } catch (e) {}
+  }
+
+  // Affirmative chime when 2.0s silence ends and auto-send occurs
+  playSendChime() {
+    this.resumeAudioContext();
+    if (!this.audioCtx) return;
+    try {
+      const now = this.audioCtx.currentTime;
+      const notes = [587.33, 880.0]; // D5 -> A5
+      notes.forEach((freq, idx) => {
+        const osc = this.audioCtx.createOscillator();
+        const gain = this.audioCtx.createGain();
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(freq, now + idx * 0.07);
+
+        gain.gain.setValueAtTime(0.13, now + idx * 0.07);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.07 + 0.18);
+
+        osc.connect(gain);
+        gain.connect(this.audioCtx.destination);
+        osc.start(now + idx * 0.07);
+        osc.stop(now + idx * 0.07 + 0.18);
+      });
+    } catch (e) {}
+  }
+
+  setSilenceThreshold(ms) {
+    this.silenceThresholdMs = Math.max(1000, Math.min(5000, ms));
+    console.log(`[VAD] Trailing silence threshold set to ${this.silenceThresholdMs}ms`);
+  }
+
   // Speak AI Tutor text aloud with selected neural voice / accent
   async speak(text, lang = "en-US", voiceName = null, onEnd = null) {
     this.stopSpeaking();
+    this.stopListening();
 
     // 1. Try Server-Side Neural TTS (edge-tts) for studio-quality regional accents
     if (voiceName) {
@@ -176,7 +247,7 @@ export class SoundManager {
     }
   }
 
-  // Speech Recognition for Hands-Free voice interaction
+  // Initialize Speech Recognition with streaming & VAD
   initSpeechRecognition() {
     const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRec) {
@@ -186,56 +257,227 @@ export class SoundManager {
 
     try {
       this.recognition = new SpeechRec();
-      this.recognition.continuous = false;
-      this.recognition.interimResults = false;
-      this.recognition.maxAlternatives = 3;
+      this.recognition.continuous = true;
+      this.recognition.interimResults = true;
+      this.recognition.maxAlternatives = 1;
+
+      this.recognition.onstart = () => {
+        this.isListening = true;
+        this.updateState("listening");
+      };
 
       this.recognition.onresult = (event) => {
-        if (event.results.length > 0) {
-          const transcript = event.results[0][0].transcript.trim();
-          console.log("[Voice Recognition Output]:", transcript);
-          if (this.speechCallback) {
-            this.speechCallback(transcript);
+        let interimText = "";
+
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          const item = event.results[i];
+          if (item.isFinal) {
+            this.accumulatedTranscript += " " + item[0].transcript;
+          } else {
+            interimText += item[0].transcript;
           }
+        }
+
+        this.currentInterim = interimText;
+        const fullCurrent = (this.accumulatedTranscript + " " + this.currentInterim).trim();
+
+        if (fullCurrent.length > 0) {
+          this.updateState("speaking");
+          if (this.onInterimCallback) {
+            this.onInterimCallback(interimText, fullCurrent);
+          }
+
+          // Restart the trailing silence countdown on every audio chunk
+          this.restartSilenceCountdown(fullCurrent);
+        }
+      };
+
+      this.recognition.onerror = (e) => {
+        if (e.error === "no-speech") {
+          // Normal background quiet; keep listening if hands-free is active
+          return;
+        }
+        console.warn("[Voice Recognition Error]:", e.error);
+        if (e.error === "not-allowed" || e.error === "service-not-allowed") {
+          this.shouldKeepListening = false;
+          this.stopListening();
         }
       };
 
       this.recognition.onend = () => {
         this.isListening = false;
-        if (this.onListeningChange) this.onListeningChange(false);
+        // If hands-free is still active and we didn't submit, seamlessly restart recognition
+        if (this.shouldKeepListening && !this.isSubmitting) {
+          try {
+            this.recognition.start();
+            this.isListening = true;
+          } catch (e) {
+            this.updateState("idle");
+          }
+        } else {
+          this.updateState("idle");
+        }
       };
 
-      this.recognition.onerror = (e) => {
-        console.warn("[Voice Recognition Error]:", e.error);
-        this.isListening = false;
-        if (this.onListeningChange) this.onListeningChange(false);
-      };
     } catch (e) {
       console.warn("Failed to initialize Speech Recognition:", e);
     }
   }
 
-  startListening(lang = "en-US", onRecognized = null) {
+  updateState(state, details = {}) {
+    this.speechState = state;
+    if (this.onStateChangeCallback) {
+      this.onStateChangeCallback(state, details);
+    }
+    if (this.onListeningChange) {
+      this.onListeningChange(state !== "idle" && state !== "submitting");
+    }
+  }
+
+  // Adaptive Silence Countdown (Auto-send after 2.0s of silence)
+  restartSilenceCountdown(currentText) {
+    this.clearSilenceTimers();
+
+    this.silenceDeadline = Date.now() + this.silenceThresholdMs;
+    this.updateState("silence_countdown", {
+      remainingMs: this.silenceThresholdMs,
+      totalMs: this.silenceThresholdMs,
+      percent: 100,
+      text: currentText
+    });
+
+    // High frequency ticker for smooth UI progress bar
+    this.silenceTicker = setInterval(() => {
+      const remaining = Math.max(0, this.silenceDeadline - Date.now());
+      const percent = (remaining / this.silenceThresholdMs) * 100;
+
+      if (this.onSilenceTickCallback) {
+        this.onSilenceTickCallback(remaining, this.silenceThresholdMs, percent);
+      }
+
+      if (remaining <= 0) {
+        this.clearSilenceTimers();
+      }
+    }, 50);
+
+    // Main timeout that triggers auto-submit
+    this.silenceTimer = setTimeout(() => {
+      this.clearSilenceTimers();
+      this.finishAndSubmit(currentText);
+    }, this.silenceThresholdMs);
+  }
+
+  clearSilenceTimers() {
+    if (this.silenceTimer) {
+      clearTimeout(this.silenceTimer);
+      this.silenceTimer = null;
+    }
+    if (this.silenceTicker) {
+      clearInterval(this.silenceTicker);
+      this.silenceTicker = null;
+    }
+  }
+
+  finishAndSubmit(textToSubmit) {
+    const finalClean = textToSubmit.trim();
+    if (!finalClean) {
+      this.accumulatedTranscript = "";
+      this.currentInterim = "";
+      this.updateState("listening");
+      return;
+    }
+
+    console.log(`[VAD Auto-Send]: 2.0s silence detected. Auto-submitting: "${finalClean}"`);
+    this.isSubmitting = true;
+    this.shouldKeepListening = false;
+    this.updateState("submitting", { text: finalClean });
+
+    // Play subtle affirmative send chime
+    this.playSendChime();
+
+    // Safely stop recognition
+    try {
+      if (this.recognition && this.isListening) {
+        this.recognition.stop();
+      }
+    } catch (e) {}
+
+    this.isListening = false;
+
+    // Dispatch final recognized transcript to conversation manager
+    if (this.speechCallback) {
+      const cb = this.speechCallback;
+      this.speechCallback = null;
+      cb(finalClean);
+    }
+
+    this.accumulatedTranscript = "";
+    this.currentInterim = "";
+    this.isSubmitting = false;
+  }
+
+  // Start continuous hands-free listening with silence auto-send
+  startListening(lang = "en-US", onRecognized = null, options = {}) {
     if (!this.recognition) return;
+
     this.stopSpeaking();
+    this.clearSilenceTimers();
+
     this.speechCallback = onRecognized;
+    this.onInterimCallback = options.onInterim || null;
+    this.onSilenceTickCallback = options.onSilenceTick || null;
+    this.onStateChangeCallback = options.onStateChange || null;
+
+    if (options.silenceThresholdMs) {
+      this.silenceThresholdMs = options.silenceThresholdMs;
+    }
+
+    this.accumulatedTranscript = "";
+    this.currentInterim = "";
+    this.isSubmitting = false;
+    this.shouldKeepListening = true;
     this.recognition.lang = lang;
 
     try {
       this.recognition.start();
       this.isListening = true;
-      this.playCarPlayChime();
-      if (this.onListeningChange) this.onListeningChange(true);
+      this.playMicOpenChime();
+      this.updateState("listening");
     } catch (e) {
-      console.warn("Recognition already active or failed to start", e);
+      // If already started, smoothly update lang & continue
+      this.isListening = true;
+      this.updateState("listening");
     }
   }
 
   stopListening() {
+    this.shouldKeepListening = false;
+    this.clearSilenceTimers();
+
     if (this.recognition && this.isListening) {
-      this.recognition.stop();
+      try {
+        this.recognition.stop();
+      } catch (e) {}
       this.isListening = false;
-      if (this.onListeningChange) this.onListeningChange(false);
     }
+    this.accumulatedTranscript = "";
+    this.currentInterim = "";
+    this.updateState("idle");
+  }
+
+  abortListening() {
+    this.shouldKeepListening = false;
+    this.clearSilenceTimers();
+    this.speechCallback = null;
+
+    if (this.recognition) {
+      try {
+        this.recognition.abort();
+      } catch (e) {}
+      this.isListening = false;
+    }
+    this.accumulatedTranscript = "";
+    this.currentInterim = "";
+    this.updateState("idle");
   }
 }

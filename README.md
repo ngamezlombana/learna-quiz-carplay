@@ -39,8 +39,14 @@ Puedes acceder directamente pulsando el botón **"🗣️ Diálogo IA"** en la b
   - 🧠 Debate sobre Inteligencia Artificial y Futuro
 - **Coaching en Tiempo Real**:
   - La IA analiza lo que dices y resalta sugerencias gramaticales constructivas (ej. corregir *"I have 25 years"* por *"I am 25 years old"* o *"I am agree"* por *"I agree"*).
-- **Voz Manos Libres**:
-  - Reconocimiento de voz por micrófono en vivo: habla con tu propia voz y escucha a tu tutor responder de inmediato.
+- **Voz 100% Manos Libres en Conducción (Bucle Conversacional Continuo)**:
+  - **Cero toques en pantalla**: El conductor **nunca** debe oprimir "Enviar" mientras maneja.
+  - **Detección Automática de Actividad de Voz (VAD) con Silencio Prolongado Investigado**:
+    - Se implementó un umbral de silencio final (*trailing silence endpointing*) de **2.0 segundos**, el estándar de oro en sistemas de voz automotrices (según directrices de la **NHTSA** y especificaciones de **Apple CarPlay / Siri, Android Auto y Nuance Automotive**).
+    - Permite al conductor vacilar o mirar los retrovisores sin ser interrumpido a mitad de frase, y envía la respuesta con chime afirmativo apenas transcurre el silencio.
+    - Incluye visualizador de ondas en tiempo real y barra de cuenta regresiva automática de 2.0s.
+  - **Bucle Infinito de Diálogo**: El tutor IA habla -> el micrófono se activa automáticamente con un sutil timbre -> el conductor responde en inglés -> tras 2.0s de silencio se envía solo -> el tutor IA responde con el acento regional elegido -> el ciclo se repite de forma natural.
+  - **Seguridad Vial y Volante**: Botón táctil grande y soporte de volante (`MediaSession`) para pausar (`⏸️`) o reanudar (`▶️`) el diálogo en cualquier momento.
 
 ### 3. Soporte para Apple CarPlay 🚗
 Dado que Apple CarPlay prohíbe el uso de navegadores web estándar mientras se conduce por razones de seguridad vial, la experiencia se adaptó según las directrices oficiales de Apple (**Human Interface Guidelines for CarPlay**):

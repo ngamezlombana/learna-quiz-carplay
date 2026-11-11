@@ -58,6 +58,15 @@ class LearnaApp {
         this.soundManager.playClick();
         if (this.isDialogueMode) {
           this.soundManager.playSuccess();
+          if (this.conversationManager.messages.length === 0) {
+            const accent = this.conversationManager.getCurrentAccent();
+            this.conversationManager.setAccent(accent.id);
+          } else if (this.conversationManager.isHandsFreeActive && !this.conversationManager.isPaused) {
+            this.conversationManager.startHandsFreeListening();
+          }
+        } else {
+          this.soundManager.stopSpeaking();
+          this.soundManager.stopListening();
         }
         this.render();
       });
@@ -930,6 +939,12 @@ class LearnaApp {
       finalCta.addEventListener("click", () => {
         this.soundManager.playSuccess();
         this.isDialogueMode = true;
+        if (this.conversationManager.messages.length === 0) {
+          const accent = this.conversationManager.getCurrentAccent();
+          this.conversationManager.setAccent(accent.id);
+        } else if (this.conversationManager.isHandsFreeActive && !this.conversationManager.isPaused) {
+          this.conversationManager.startHandsFreeListening();
+        }
         this.render();
       });
     }
@@ -941,6 +956,12 @@ class LearnaApp {
       cpDockDialogue.addEventListener("click", () => {
         this.soundManager.playCarPlayChime();
         this.isDialogueMode = true;
+        if (this.conversationManager.messages.length === 0) {
+          const accent = this.conversationManager.getCurrentAccent();
+          this.conversationManager.setAccent(accent.id);
+        } else if (this.conversationManager.isHandsFreeActive && !this.conversationManager.isPaused) {
+          this.conversationManager.startHandsFreeListening();
+        }
         this.render();
       });
     }

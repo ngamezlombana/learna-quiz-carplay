@@ -24,28 +24,60 @@ export class CarPlayController {
         ]
       });
 
-      // Steering wheel next track button -> Next question
+      // Steering wheel next track button -> Next question or Next Scenario
       navigator.mediaSession.setActionHandler("nexttrack", () => {
         console.log("[CarPlay Action]: Next Track (Steering Wheel)");
-        this.app.nextStep();
+        if (this.app.isDialogueMode && this.app.conversationManager) {
+          const mgr = this.app.conversationManager;
+          const currentIndex = mgr.scenarios.findIndex(s => s.id === mgr.currentScenario);
+          const nextScenario = mgr.scenarios[(currentIndex + 1) % mgr.scenarios.length];
+          mgr.setScenario(nextScenario.id);
+        } else {
+          this.app.nextStep();
+        }
       });
 
-      // Steering wheel prev track button -> Repeat question
+      // Steering wheel prev track button -> Repeat question or Repeat AI Speech
       navigator.mediaSession.setActionHandler("previoustrack", () => {
         console.log("[CarPlay Action]: Prev Track (Steering Wheel)");
-        this.app.speakCurrentStep();
+        if (this.app.isDialogueMode && this.app.conversationManager) {
+          const mgr = this.app.conversationManager;
+          const lastAi = mgr.messages.filter(m => m.sender === "ai").slice(-1)[0];
+          if (lastAi) {
+            const accent = mgr.getCurrentAccent();
+            mgr.soundManager.speak(lastAi.text, mgr.currentAccentId, lastAi.voice || accent.voice, () => {
+              if (mgr.isHandsFreeActive && !mgr.isPaused) {
+                mgr.startHandsFreeListening();
+              }
+            });
+          }
+        } else {
+          this.app.speakCurrentStep();
+        }
       });
 
       // Play/Pause button
       navigator.mediaSession.setActionHandler("play", () => {
         console.log("[CarPlay Action]: Play");
-        this.app.speakCurrentStep();
+        if (this.app.isDialogueMode && this.app.conversationManager) {
+          if (this.app.conversationManager.isPaused) {
+            this.app.conversationManager.togglePause();
+          }
+        } else {
+          this.app.speakCurrentStep();
+        }
       });
 
       navigator.mediaSession.setActionHandler("pause", () => {
         console.log("[CarPlay Action]: Pause");
-        this.soundManager.stopSpeaking();
-        this.soundManager.stopListening();
+        if (this.app.isDialogueMode && this.app.conversationManager) {
+          if (!this.app.conversationManager.isPaused) {
+            this.app.conversationManager.togglePause();
+          }
+        } else {
+          this.soundManager.stopSpeaking();
+          this.soundManager.stopListening();
+        }
       });
     } catch (e) {
       console.warn("Failed to set MediaSession handlers:", e);
